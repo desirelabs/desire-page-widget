@@ -27,7 +27,7 @@ done!
 
 == Translation ==
 
-The plugin comes with english and french translations. Feel free to fork me on github if you want me to add your translation :)
+The plugin comes with english and french translations. Feel free to fork me on github if you want me to add yours :)
 
 == Tips ==
 
