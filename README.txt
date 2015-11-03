@@ -1,10 +1,11 @@
 === Desire Page Widget ===
+
 Contributors: franck
-Tags: page, widget, single page
+Tags: page, widget, single page, one page, layout
 Requires at least: 3.5
 Tested up to: 4.3.1
 Stable tag: 1.0
-License: GPLv3 or later
+License: GPLv3 or later (licence file inclued)
 
 == Description ==
 
@@ -23,6 +24,10 @@ Give a name to your widget (usualy a name related to the page you're including)
 Copy and paste the shortcode [desire_widget_sidebar] into the content you want the sidebar to show up, a page or a post for example
 
 done!
+
+== Translation ==
+
+The plugin comes with english and french translations. Feel free to fork me on github if you want me to add your translation :)
 
 == Tips ==
 
