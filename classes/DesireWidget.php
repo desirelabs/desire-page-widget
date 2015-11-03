@@ -1,12 +1,7 @@
 <?php
 /**
- * Author: Franck LEBAS
- * Date: 01/11/15
- * Time: 09:35
- */
-
-/**
- * Page widget
+ * DesireWidget class
+ * @package desire-page-widget
  */
 class DesireWidget extends WP_Widget {
 	/**
@@ -28,25 +23,29 @@ class DesireWidget extends WP_Widget {
 	 * @param array $instance Previously saved values from database.
 	 */
 	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : "";
+		$title       = ! empty( $instance['title'] ) ? $instance['title'] : "";
 		$custom_page = ! empty( $instance['custom_page'] ) ? $instance['custom_page'] : "";
-		$pages = get_pages();
+		$pages       = get_pages();
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'custom_page' ); ?>"><?php _e( 'Select a page :' ); ?></label>
-			<select name="<?php echo $this->get_field_name( 'custom_page' ); ?>" id="<?php echo $this->get_field_id( 'custom_page' ); ?>">
+			<select name="<?php echo $this->get_field_name( 'custom_page' ); ?>"
+			        id="<?php echo $this->get_field_id( 'custom_page' ); ?>">
 				<option></option>
-				<?php foreach( $pages as $page ):
+				<?php foreach ( $pages as $page ):
 					if ( $page->post_name == $custom_page ): ?>
-					<option value="<?php echo $page->post_name; ?>" selected="selected"><?php echo $page->post_title; ?></option>
+						<option value="<?php echo $page->post_name; ?>"
+						        selected="selected"><?php echo $page->post_title; ?></option>
 					<?php else: ?>
-					<option value="<?php echo $page->post_name; ?>"><?php echo $page->post_title; ?></option>
-				<?php endif;
+						<option value="<?php echo $page->post_name; ?>"><?php echo $page->post_title; ?></option>
+					<?php endif;
 				endforeach; ?>
 			</select>
-			<br />
+			<br/>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Page title :' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
+			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
+			       value="<?php echo esc_attr( $title ); ?>">
 		</p>
 	<?php
 	}
@@ -56,22 +55,18 @@ class DesireWidget extends WP_Widget {
 	 *
 	 * @see WP_Widget::widget()
 	 *
-	 * @param array $args     Widget arguments.
+	 * @param array $args Widget arguments.
 	 * @param array $instance Saved values from database.
 	 */
 	public function widget( $args, $instance ) {
 		global $post;
-		extract($args);
-		$title = $instance['title'];
 		$custom_page = apply_filters( 'widget_slug', $instance['custom_page'] );
-		$content = new WP_Query('pagename='.$custom_page);
+		$content     = new WP_Query( 'pagename=' . $custom_page );
 		echo $args['before_widget'];
-		if ( $content->post->ID == $post->ID && current_user_can('edit_pages') ) {
-			print(__("You're trying to display a content in itself. Errors may occure. Action cancelled."));
-			var_dump($custom_page);
-		}
-		else {
-			while  ( $content->have_posts() ): $content->the_post(); ?>
+		if ( $content->post->ID == $post->ID && current_user_can( 'edit_pages' ) ) {
+			print( __( "You're trying to include a content in itself. Errors may occure. Action cancelled." ) );
+		} else {
+			while ( $content->have_posts() ): $content->the_post(); ?>
 				<?php the_content(); ?>
 			<?php
 			endwhile;
@@ -90,12 +85,10 @@ class DesireWidget extends WP_Widget {
 	 * @return array Updated safe values to be saved.
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance = array();
+		$instance                = array();
 		$instance['custom_page'] = ( ! empty( $new_instance['custom_page'] ) ) ? strip_tags( $new_instance['custom_page'] ) : '';
-		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+		$instance['title']       = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 
 		return $instance;
 	}
-	
-	// end widget
 }

@@ -1,12 +1,13 @@
 <?php
 /**
- * Author: Franck LEBAS
+ * DesireSidebar class
+ * @package desire-page-widget
  */
 
 class DesireSidebar {
 
 	/**
-	 * Register a new sidebar to put widgets
+	 * Register a new sidebar to put widgets in
 	 */
 	public static function desire_register_sidebar() {
 		// Register sidebar
