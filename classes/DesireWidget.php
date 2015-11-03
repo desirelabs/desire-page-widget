@@ -64,6 +64,7 @@ class DesireWidget extends WP_Widget {
 		$custom_page = apply_filters( 'widget_slug', $instance['custom_page'] );
 		$content     = new WP_Query( 'pagename=' . $custom_page );
 		echo $args['before_widget'];
+		var_dump($args['before_widget']);
 		if ( $content->post->ID == $post->ID && current_user_can( 'edit_pages' ) ) {
 			print( __( "You're trying to include a content in itself. Errors may occure. Action cancelled." ) );
 		} else {
