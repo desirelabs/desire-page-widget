@@ -4,7 +4,7 @@ Contributors: franck
 Tags: page, widget, single page, one page, layout
 Requires at least: 3.5
 Tested up to: 4.3.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv3 or later (licence file inclued)
 
 == Description ==
@@ -16,8 +16,6 @@ Comes with a custom sidebar which can be included in your content unsing a short
 
 Upload the Desire Page Widget plugin to your wp-content/plugins/ blog folder, then activate it.
 
-== How to configure a Sidebar ==
-
 Go to appearance/widgets in your admin menu
 Add a Desire Page Widget in the freshly created Desire Widget Sidebar
 Select in the list the page you want to display
@@ -26,16 +24,14 @@ Copy and paste the shortcode [desire_widget_sidebar] into the content you want t
 
 done!
 
-== Translation ==
-
-The plugin comes with english and french translations. Feel free to fork me on github if you want me to add yours :)
-
-== Tips ==
-
 You can use this plugin to create more efficient web pages with the full power of widgets.
 Thanks to the custom css classes, you can aswell create custom based layout pages.
 
 Have fun !
+
+== Translation ==
+
+The plugin comes with english and french translations. Feel free to fork me on github if you want me to add yours :)
 
 == Support ==
 
