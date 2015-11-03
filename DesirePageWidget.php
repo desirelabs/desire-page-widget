@@ -9,6 +9,7 @@
  * Licence: GPLv3
  * http://www.gnu.org/licenses/gpl-3.0.en.html
  * Text Domain: desire-page-widget
+ * Domaine Path: /lang
  */
 
 define( 'DESIRE_WIDGET_PAGE_PLUGIN_DIR', __DIR__ );
