@@ -1,14 +1,48 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2015-11-01 18:09+0100\n"
-"PO-Revision-Date: 2015-11-01 18:09+0100\n"
+"Project-Id-Version: desire-page-widget\n"
+"POT-Creation-Date: 2015-11-01 21:36+0100\n"
+"PO-Revision-Date: 2015-11-01 21:37+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.5\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: /home/franck/www/atsouhaits/wp-content/plugins/desire-"
+"page-widget\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: en\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: /home/franck/www/atsouhaits/wp-content/plugins/desire-"
+"page-widget\n"
+
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireSidebar.php:15
+msgid "Desire widget sidebar"
+msgstr ""
+
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:13
+msgid "Desire page widget"
+msgstr ""
+
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:14
+msgid "Display page content"
+msgstr ""
+
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:32
+msgid "Select a page :"
+msgstr ""
+
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:48
+msgid "Widget title :"
+msgstr ""
+
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:54
+msgid "Custom classes (seperated with blank space) :"
+msgstr ""
+
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:77
+msgid ""
+"You're trying to include a content in itself. Errors may occure. Action "
+"cancelled."
+msgstr ""

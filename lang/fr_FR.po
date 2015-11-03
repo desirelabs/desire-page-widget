@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: desire-page-widget\n"
-"POT-Creation-Date: 2015-11-01 18:01+0100\n"
-"PO-Revision-Date: 2015-11-01 18:04+0100\n"
+"POT-Creation-Date: 2015-11-01 21:37+0100\n"
+"PO-Revision-Date: 2015-11-01 21:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: desirelabs <neovea@gmail.com>\n"
 "Language: en\n"
@@ -28,15 +28,20 @@ msgstr "Desire page widget"
 msgid "Display page content"
 msgstr "Affiche un contenu de page"
 
-#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:31
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:32
 msgid "Select a page :"
 msgstr "Sélectionner une page"
 
-#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:46
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:48
 msgid "Widget title :"
 msgstr "Titre du widget"
 
-#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:68
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:54
+msgid "Custom classes (seperated with blank space) :"
+msgstr ""
+"Classes css personnalisées (les classes doivent êrte séparée par une espace)"
+
+#: /home/franck/www/atsouhaits/wp-content/plugins/desire-page-widget/classes/DesireWidget.php:77
 msgid ""
 "You're trying to include a content in itself. Errors may occure. Action "
 "cancelled."

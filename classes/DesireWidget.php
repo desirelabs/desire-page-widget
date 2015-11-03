@@ -24,6 +24,7 @@ class DesireWidget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		$title       = ! empty( $instance['title'] ) ? $instance['title'] : "";
+		$custom_class= ! empty( $instance['custom_class'] ) ? $instance['custom_class'] : "";
 		$custom_page = ! empty( $instance['custom_page'] ) ? $instance['custom_page'] : "";
 		$pages       = get_pages();
 		?>
@@ -42,11 +43,18 @@ class DesireWidget extends WP_Widget {
 					<?php endif;
 				endforeach; ?>
 			</select>
-			<br/>
+		</p>
+		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php print( __( 'Widget title :', 'desire-page-widget' ) ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
 			       value="<?php echo esc_attr( $title ); ?>">
+		</p>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php print( __( 'Custom classes (seperated with blank space) :', 'desire-page-widget' ) ); ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id( 'custom_class' ); ?>"
+			       name="<?php echo $this->get_field_name( 'custom_class' ); ?>" type="text"
+			       value="<?php echo esc_attr( $custom_class ); ?>">
 		</p>
 	<?php
 	}
@@ -62,15 +70,18 @@ class DesireWidget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		global $post;
 		$custom_page = apply_filters( 'widget_slug', $instance['custom_page'] );
+		$custom_class = $instance['custom_class'] ? apply_filters( 'widget_slug', $instance['custom_class'] ) : "";
 		$content     = new WP_Query( 'pagename=' . $custom_page );
 		echo $args['before_widget'];
 		if ( $content->post->ID == $post->ID && current_user_can( 'edit_pages' ) ) {
 			print( __( "You're trying to include a content in itself. Errors may occure. Action cancelled." ) );
 		} else {
+			echo '<div class="desire-widget-item '.$custom_class.'">';
 			while ( $content->have_posts() ): $content->the_post(); ?>
 				<?php the_content(); ?>
 			<?php
 			endwhile;
+			echo '</div>';
 		}
 		echo $args['after_widget'];
 	}
@@ -87,8 +98,9 @@ class DesireWidget extends WP_Widget {
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance                = array();
-		$instance['custom_page'] = ( ! empty( $new_instance['custom_page'] ) ) ? strip_tags( $new_instance['custom_page'] ) : '';
 		$instance['title']       = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+		$instance['custom_page'] = ( ! empty( $new_instance['custom_page'] ) ) ? strip_tags( $new_instance['custom_page'] ) : '';
+		$instance['custom_class']       = ( ! empty( $new_instance['custom_class'] ) ) ? strip_tags( $new_instance['custom_class'] ) : '';
 
 		return $instance;
 	}
