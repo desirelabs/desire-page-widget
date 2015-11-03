@@ -4,8 +4,10 @@
  * Plugin URI: http://wordpress.org/plugins/desire-page-widget/
  * Description: Allow creating pages made of widgets && displaying pages through widgets
  * Author: Franck LEBAS
- * Version: 1.0
  * Author URI: http://desirelabs.fr
+ * Version: 1.0
+ * Licence: GPLv3
+ * http://www.gnu.org/licenses/gpl-3.0.en.html
  * Text Domain: desire-page-widget
  */
 
@@ -17,6 +19,9 @@ class DesirePageWidget {
 
 
 	static function init() {
+
+		// Language
+		load_theme_textdomain( 'desire-page-widget', DESIRE_WIDGET_PAGE_PLUGIN_DIR . '/lang' );
 
 		// Hooks and actions init
 		add_action( 'widgets_init', array( 'DesireSidebar', 'desire_register_sidebar' ) );

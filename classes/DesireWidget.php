@@ -28,9 +28,10 @@ class DesireWidget extends WP_Widget {
 		$pages       = get_pages();
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'custom_page' ); ?>"><?php _e( 'Select a page :' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'custom_page' ); ?>"><?php print( __( 'Select a page :', 'desire-page-widget' ) ); ?></label>
 			<select name="<?php echo $this->get_field_name( 'custom_page' ); ?>"
-			        id="<?php echo $this->get_field_id( 'custom_page' ); ?>">
+			        id="<?php echo $this->get_field_id( 'custom_page' ); ?>"
+			        style="display: block; width: 100%">
 				<option></option>
 				<?php foreach ( $pages as $page ):
 					if ( $page->post_name == $custom_page ): ?>
@@ -42,7 +43,7 @@ class DesireWidget extends WP_Widget {
 				endforeach; ?>
 			</select>
 			<br/>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Page title :' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php print( __( 'Widget title :', 'desire-page-widget' ) ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
 			       value="<?php echo esc_attr( $title ); ?>">
