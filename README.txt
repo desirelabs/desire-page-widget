@@ -12,15 +12,29 @@ Desire Page Widget allows including page contents in widgets and adding a widget
 
 == Installation ==
 
-Upload the Desire Page Widget plugin to your blog, Activate it.
-Configure yo Desire Page Sidebar :
-Add a Desire Page Widget in the sidebar
-Select the page you want to display
-Name your widget
-Copy the shortcode [desire_widget_sidebar] to the content you want the sidebar to show up
+Upload the Desire Page Widget plugin to your wp-content/plugins/ blog folder, then activate it.
+
+== How to configure a Sidebar ==
+
+Go to appearance/widgets in your admin menu
+Add a Desire Page Widget in the freshly created Desire Widget Sidebar
+Select in the kist the page you want to display
+Give a name to your widget (usualy a name related to the page you're including)
+Copy and paste the shortcode [desire_widget_sidebar] into the content you want the sidebar to show up, a page or a post for example
 
 done!
 
+== Tips ==
+
+You can use this plugin to create more efficient web pages with the full power of widgets.
+Thanks to the custom css classes, you can aswell create custom based layout pages.
+
+Have fun !
+
 == Support ==
 
-I'll offer support as much as I can through the support page of the plugin
+I'll offer support as much as I can through :
+WordPress official page : http://wordpress.org/plugins/desire-page-widget/
+Github official page : https://github.com/neovea/desire-page-widget
+
+Notice that this plugin is made on my free time, so please, be patient if I don't answer your requests right away ;)
