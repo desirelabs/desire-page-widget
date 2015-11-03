@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Desire Page Widget
  * Plugin URI: http://wordpress.org/plugins/desire-page-widget/
- * Description: Allow creating pages made of widgets && displaying pages through widgets
+ * Description: Brings an easy way to bring your widgets into your content, and displaying pages through one.
  * Author: Franck LEBAS
  * Author URI: http://desirelabs.fr
  * Version: 1.0

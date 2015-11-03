@@ -9,7 +9,8 @@ License: GPLv3 or later (licence file inclued)
 
 == Description ==
 
-Desire Page Widget allows including page contents in widgets and adding a widget sidebar in any content.
+This plugin allows creating pages and contents made of widgets, aswell as displaying pages through widgets.
+Comes with a custom sidebar which can be included in your content unsing a shortcode, and un widget to bring pages in your contents.
 
 == Installation ==
 
