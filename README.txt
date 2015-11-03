@@ -19,8 +19,8 @@ Upload the Desire Page Widget plugin to your wp-content/plugins/ blog folder, th
 
 Go to appearance/widgets in your admin menu
 Add a Desire Page Widget in the freshly created Desire Widget Sidebar
-Select in the kist the page you want to display
-Give a name to your widget (usualy a name related to the page you're including)
+Select in the list the page you want to display
+Name to your widget (usualy a name related to the page you're including)
 Copy and paste the shortcode [desire_widget_sidebar] into the content you want the sidebar to show up, a page or a post for example
 
 done!
