@@ -1,4 +1,5 @@
 === Desire Page Widget ===
+
 Contributors: franck
 Tags: page, widget, single page, one page, layout
 Requires at least: 3.5
