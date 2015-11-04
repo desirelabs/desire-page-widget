@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Desire Page Widget
  * Plugin URI: http://wordpress.org/plugins/desire-page-widget/
- * Description: Brings an easy way to display widgets into your content, and displaying pages content in a widgt.
+ * Description: Brings an easy way to display widgets into your content, and displaying pages content in a widget.
  * Author: Franck LEBAS
  * Author URI: http://desirelabs.fr
- * Version: 1.0.1
+ * Version: 1.0.1.2
  * Licence: GPLv3
  * http://www.gnu.org/licenses/gpl-3.0.en.html
  * Text Domain: desire-page-widget
