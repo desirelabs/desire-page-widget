@@ -4,7 +4,7 @@ Contributors: franck
 Tags: page, widget, single page, one page, layout
 Requires at least: 3.5
 Tested up to: 4.3.1
-Stable tag: 1.0.1
+Stable tag: 1.0.1.2
 License: GPLv3 or later (licence file inclued)
 
 == Description ==
