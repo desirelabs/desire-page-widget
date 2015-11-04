@@ -1,5 +1,4 @@
 === Desire Page Widget ===
-
 Contributors: franck
 Tags: page, widget, single page, one page, layout
 Requires at least: 3.5
@@ -9,23 +8,23 @@ License: GPLv3 or later (licence file inclued)
 
 == Description ==
 
-This plugin allows creating pages and contents made of widgets, aswell as displaying pages through widgets.
-Comes with a custom sidebar which can be included in your content unsing a shortcode, and un widget to bring pages in your contents.
+This plugin allows adding a single a widget zone in your contents via shortcode.
+It comes with a specially designed widget which displays pages content.
 
 == Installation ==
 
 Upload the Desire Page Widget plugin to your wp-content/plugins/ blog folder, then activate it.
 
-Go to appearance/widgets in your admin menu
-Add a Desire Page Widget in the freshly created Desire Widget Sidebar
-Select in the list the page you want to display
-Name to your widget (usualy a name related to the page you're including)
-Copy and paste the shortcode [desire_widget_sidebar] into the content you want the sidebar to show up, a page or a post for example
+* Go to appearance/widgets in your admin menu
+* Add a Desire Page Widget in the freshly created Desire Widget Sidebar
+* Select in the list the page you want to display
+* Name to your widget (usually a name related to the page you're including)
+* Copy and paste the shortcode [desire_widget_sidebar] into the content you want the sidebar to show up, a page or a post for example
 
 done!
 
 You can use this plugin to create more efficient web pages with the full power of widgets.
-Thanks to the custom css classes, you can aswell create custom based layout pages.
+Thanks to the custom css classes, you can as well create custom based layout pages.
 
 Have fun !
 
