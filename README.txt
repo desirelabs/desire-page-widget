@@ -37,6 +37,6 @@ The plugin comes with english and french translations. Feel free to fork me on g
 
 I'll offer support as much as I can through :
 WordPress official page : http://wordpress.org/plugins/desire-page-widget/
-Github official page : https://github.com/neovea/desire-page-widget
+Github official page : https://github.com/desirelabs/desire-page-widget
 
 Notice that this plugin is made on my free time, so please, be patient if I don't answer your requests right away ;)
